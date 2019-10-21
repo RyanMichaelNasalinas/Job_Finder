@@ -1,5 +1,5 @@
-<hr>
-<footer class="container">
+
+<footer class="container mt-5">
   <p>&copy; Company <?= date("Y"); ?></p>
 </footer>
 
