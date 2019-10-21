@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 20, 2019 at 10:10 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.3.3
+-- Generation Time: Oct 21, 2019 at 05:47 PM
+-- Server version: 10.1.40-MariaDB
+-- PHP Version: 7.1.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `joblists`
+-- Database: `jobslists`
 --
 
 -- --------------------------------------------------------
@@ -59,15 +59,17 @@ CREATE TABLE `jobs` (
   `salary` varchar(255) NOT NULL,
   `location` varchar(255) NOT NULL,
   `contact_user` varchar(255) NOT NULL,
-  `contact_email` varchar(255) NOT NULL
+  `contact_email` varchar(255) NOT NULL,
+  `post_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `jobs`
 --
 
-INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, `salary`, `location`, `contact_user`, `contact_email`) VALUES
-(1, 1, 'Ryecompany', 'Senior PHP developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies finibus odio, vitae dapibus arcu fermentum in. Phasellus id est lorem. Aliquam id ex mi. Duis quis nulla ante. Nullam gravida volutpat faucibus. Duis sagittis ligula magna, ut maximus', '150k', 'Manila Philippines', 'Ryan Michael', 'rye@gmail.com');
+INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, `salary`, `location`, `contact_user`, `contact_email`, `post_date`) VALUES
+(1, 1, 'Ryecompany', 'Senior PHP developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies finibus odio, vitae dapibus arcu fermentum in. Phasellus id est lorem. Aliquam id ex mi. Duis quis nulla ante. Nullam gravida volutpat faucibus. Duis sagittis ligula magna, ut maximus', '150k', 'Manila Philippines', 'Ryan Michael', 'rye@gmail.com', '2019-10-21 15:46:06'),
+(2, 0, '', '', '', '', '', '', '', '2019-10-21 15:46:21');
 
 --
 -- Indexes for dumped tables
@@ -99,7 +101,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

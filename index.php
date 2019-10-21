@@ -14,8 +14,8 @@
         $template->title = 'Latest Jobs';
         $template->jobs = $jobs->getAllJobs(); //Get all jobs from the database
     }
-
-    $template->categories = $jobs->getCategories(); //Get all categories
+    //Get all categories
+    $template->categories = $jobs->getCategories(); 
     
     echo $template;
 ?>

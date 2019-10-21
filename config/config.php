@@ -8,5 +8,4 @@
     //Define Sitename
     define("SITE_NAME","JobsLister");
 
-
 ?>
