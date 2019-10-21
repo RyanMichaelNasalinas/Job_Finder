@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 21, 2019 at 05:47 PM
+-- Generation Time: Oct 21, 2019 at 08:34 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.1.29
 
@@ -69,7 +69,7 @@ CREATE TABLE `jobs` (
 
 INSERT INTO `jobs` (`id`, `category_id`, `company`, `job_title`, `description`, `salary`, `location`, `contact_user`, `contact_email`, `post_date`) VALUES
 (1, 1, 'Ryecompany', 'Senior PHP developer', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies finibus odio, vitae dapibus arcu fermentum in. Phasellus id est lorem. Aliquam id ex mi. Duis quis nulla ante. Nullam gravida volutpat faucibus. Duis sagittis ligula magna, ut maximus', '150k', 'Manila Philippines', 'Ryan Michael', 'rye@gmail.com', '2019-10-21 15:46:06'),
-(2, 0, '', '', '', '', '', '', '', '2019-10-21 15:46:21');
+(3, 2, 'King', 'King', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies finibus odio, vitae dapibus arcu fermentum in. Phasellus id est lorem. Aliquam id ex mi. Duis quis nulla ante. Nullam gravida volutpat faucibus. Duis sagittis ligula magna, ut maximus', '2k', 'King', 'King', 'King@email.com', '2019-10-21 16:42:57');
 
 --
 -- Indexes for dumped tables
@@ -101,7 +101,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
